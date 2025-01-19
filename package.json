@@ -1,0 +1,22 @@
+{
+  "name": "e2etestautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairejowright/e2etestautomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clairejowright/e2etestautomation/issues"
+  },
+  "homepage": "https://github.com/clairejowright/e2etestautomation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  }
+}
