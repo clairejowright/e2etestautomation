@@ -17,6 +17,10 @@
   "homepage": "https://github.com/clairejowright/e2etestautomation#readme",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.7"
+    "@types/node": "^22.10.7",
+    "axe-core": "^4.10.2"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.1"
   }
 }
