@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
   await page.goto('https://automationintesting.online/');
 });
 
-test.describe('Book Room and check is marked as unavailable', () => {
+test.describe('Booking Room by customers', () => {
   test('Book any room type', async ({ page }) => {
 
 
@@ -36,3 +36,4 @@ test.describe('Book Room and check is marked as unavailable', () => {
     await page.getByText('Unavailable').first().click();
 });
 });
+

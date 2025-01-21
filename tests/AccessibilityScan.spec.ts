@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright'; // 1
 
-test('example with attachment', async ({ page }, testInfo) => {
+test('Accessibility Scan', async ({ page }, testInfo) => {
     await page.goto('https://automationintesting.online/');
   
     const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); // 4
