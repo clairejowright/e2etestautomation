@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe('Booking Room by customers', () => {
-  test('Book any room type', async ({ page }) => {
+  test('Book any room type and view as unavailable on homepage', async ({ page }) => {
 
 
     // Create any room booking

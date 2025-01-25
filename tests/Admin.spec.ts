@@ -46,4 +46,14 @@ await page.getByRole('link', { name: 'Front Page' }).click();
 
   });
 
+  test('Admin User can add in image for room type', async ({ page }) => {
+    
+    
+      });
+
+      test('Admin User can delete room and will not be viewable on homepage', async ({ page }) => {
+    
+    
+      });
+
 });
