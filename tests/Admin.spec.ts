@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-await page.goto('https://automationintesting.online/');
-await page.getByRole('link', { name: 'Admin panel', exact: true }).click();
-await page.getByTestId('username').click();
-await page.getByTestId('username').fill('admin');
-await page.getByTestId('username').press('Tab');
-await page.getByTestId('password').fill('password');
-await page.getByTestId('submit').click();
+  await page.goto('https://automationintesting.online/');
+  await page.getByRole('link', { name: 'Admin panel', exact: true }).click();
+  await page.getByTestId('username').click();
+  await page.getByTestId('username').fill('admin');
+  await page.getByTestId('password').click();
+  await page.getByTestId('password').fill('password');
+  await page.getByTestId('submit').click();
+  
 });
 
 test.describe('Admin user funcationality', () => {
@@ -47,13 +48,47 @@ await page.getByRole('link', { name: 'Front Page' }).click();
   });
 
   test('Admin User can add in image for room type', async ({ page }) => {
-    
-    
-      });
+   // https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg
+  
 
-      test('Admin User can delete room and will not be viewable on homepage', async ({ page }) => {
+  await page.getByTestId('roomName').click();
+  await page.getByTestId('roomName').fill('345');
+  await page.getByLabel('WiFi').check();
+  await page.locator('#roomPrice').click();
+  await page.locator('#roomPrice').fill('45');
+  await page.getByRole('button', { name: 'Create' }).click();
+  await page.getByText('345').click();
+  await page.getByRole('button', { name: 'Edit' }).click();
+  
     
+  await page.getByLabel('Image:').fill('https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg');
+  await page.getByRole('button', { name: 'Update' }).click();
+  await page.getByRole('img', { name: 'Room: 345 preview image' }).click();
+  await page.getByRole('link', { name: 'Front Page' }).click();
+  await page.getByRole('img', { name: 'Preview image of room345' }).click();
+  const locator = page.locator('Image');
+ // Assert attribute existence.
+ await expect(locator).toHaveAttribute('https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg');
+
+
+  
+  });
+  test('Admin User can delete room and will not be viewable on homepage', async ({ page }) => {
     
-      });
+  await page.getByTestId('roomName').click();
+  await page.getByTestId('roomName').fill('124');
+  await page.getByLabel('WiFi').check();
+  await page.locator('#roomPrice').click();
+  await page.locator('#roomPrice').fill('67');
+  await page.getByRole('button', { name: 'Create' }).click();
+  await page.getByText('124').click();
+  
+   
+   });
 
 });
+
+   
+
+
+
