@@ -78,11 +78,12 @@ See https://playwright.dev/docs/running-tests for more ways to run tests.
 
 ## Documentation
 
-[Test Plan](e2etestautomation\Test Plans)
-[Test Cases](e2etestautomation\Test Cases)
-[Summary Report](e2etestautomation\Summary Report)
-[Bug Reports](e2etestautomation\Bug Reports)
-[Future Improvements](e2etestautomation\Future Improvements)
+Test Plan - e2etestautomation\Test Plans
+Test Cases - e2etestautomation\Test Cases
+Summary Report - e2etestautomation\Summary Report
+Bug Reports - e2etestautomation\Bug Reports
+Trello Bug tracker board available at https://trello.com/b/Har9hMvJ/restful-booker-bug-tracker
+Future Improvements- e2etestautomation\Future Improvements
 
 
 
