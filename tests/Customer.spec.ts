@@ -32,8 +32,6 @@ test('Customer can view an error message when leaving out booking details', asyn
   //Booking room
   await page.getByRole('button', { name: 'Book this room' }).first().click();
   await page.getByRole('button', { name: 'Next' }).click();
-  await page.locator('div:nth-child(5) > .rbc-row-bg > div:nth-child(3)').dblclick();
-  await page.getByText('night(s) - £100').click();
 
   //Filling in details but leaving out email
   await page.getByPlaceholder('Firstname').click();

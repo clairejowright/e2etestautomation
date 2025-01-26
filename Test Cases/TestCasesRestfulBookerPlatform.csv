@@ -1,0 +1,11 @@
+﻿Test Case ID,User Persona,User Flow,Testing Type,Tools,Notes
+A1,Admin,"Add in new room type, check is present on homepage and can be viewed when not logged in as admin",Automated,Playwright,
+A2,Admin,"Add in new room type, check is present on home page, make an edit and then check is updated",Automated,Playwright,
+A3,Admin,Admin User can add in image for room type after creating a room,Automated,Playwright,
+A4,Admin,Admin User can delete room and will not be viewable on homepage,Automated,Playwright,
+A5,Admin,Admin user can make update to branding page and then changes viewable on homepage,Automated,Playwright,
+A6,Admin,Admin user can view a room booking via in tray menu option,Automated,Playwright,
+C1,Customer,Book any room type and see confirmation message,Automated,Playwright,
+C2,Customer,Customer sees an error message when leaving out required information,Automated,Playwright,
+C3,Customer,Customer can use contact form and admin can view,Automated,Playwright,
+W1,Both,Accessibility Scan,Automated,Playwright,
